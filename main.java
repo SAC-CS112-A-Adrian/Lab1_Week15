@@ -6,7 +6,7 @@ public class main {
 		System.out.println("Start");
 		
 		for (int i = 0; i < 25; i++) {
-			Runnable T1 = new MyThread(i);
+			Runnable T1 = new MyThread(25);
 			Thread diceRoll = new Thread(T1);
 			diceRoll.start();
 
